@@ -18,7 +18,7 @@ export const registerUser = asyncHandler(async (req, res) => {
     }
 
     const ipAddress = req.ip;
-    const userToken = crypto.randomUUID();
+    const userToken = Math.floor(100000 + Math.random() * 900000).toString();
 
     const user = await User.create({
         name,
