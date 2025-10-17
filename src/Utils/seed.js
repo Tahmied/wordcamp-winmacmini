@@ -7,7 +7,7 @@ dotenv.config('./.env')
 
 const seedDB = async () => {
     try {
-        await mongoose.connect(`${process.env.MONGODB_URL}/wordcamp`);
+        await mongoose.connect(`${process.env.MONGODB_URL}/winmacmini`);
         console.log('Database connected for seeding...');
         await Question.deleteMany({});
         console.log('Old questions removed.');

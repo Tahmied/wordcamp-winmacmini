@@ -49,11 +49,24 @@ const userSchema = new mongoose.Schema({
   assignedPrize: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Prize'
-  }, 
+  },
   rewardTaken: {
     type: Boolean,
     default: false
-  }
+  },
+  hasPostedSocial: {
+    type: Boolean,
+    default: false
+  },
+  socialPlatform: {
+    type: String,
+    enum: ['Facebook', 'LinkedIn', 'Twitter', 'Instagram', 'Other'], 
+    default: null
+  },
+  socialPostLink: {
+    type: String,
+    default: null
+  },
 });
 
 export const User = mongoose.model('User', userSchema);
