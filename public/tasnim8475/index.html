@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - User Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            min-height: 100vh;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(0, 229, 153, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 153, 0.1);
+            border-radius: 16px;
+            padding: 24px 32px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            box-shadow: 0 8px 32px rgba(0, 229, 153, 0.1);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #00e599 0%, #00b377 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 24px;
+            color: #000000;
+            box-shadow: 0 4px 16px rgba(0, 229, 153, 0.3);
+        }
+
+        .company-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00e599;
+            letter-spacing: -0.5px;
+        }
+
+        .header-title {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 400;
+        }
+
+        /* Search Section */
+        .search-section {
+            background: rgba(0, 229, 153, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 153, 0.1);
+            border-radius: 16px;
+            padding: 24px 32px;
+            margin-bottom: 32px;
+        }
+
+        .search-wrapper {
+            position: relative;
+            max-width: 600px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #00e599;
+            pointer-events: none;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 16px 14px 48px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(0, 229, 153, 0.2);
+            border-radius: 12px;
+            color: #ffffff;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #00e599;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 0 4px rgba(0, 229, 153, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(0, 229, 153, 0.05);
+            border: 1px solid rgba(0, 229, 153, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #00e599;
+        }
+
+        /* Table */
+        .table-container {
+            background: rgba(0, 229, 153, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 153, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: rgba(0, 229, 153, 0.1);
+        }
+
+        th {
+            padding: 18px 24px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            color: #00e599;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid rgba(0, 229, 153, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        tbody tr:hover {
+            background: rgba(0, 229, 153, 0.08);
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        td {
+            padding: 20px 24px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+        }
+
+        .user-name {
+            font-weight: 600;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00e599 0%, #00b377 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #000000;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .user-token {
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 229, 153, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #00e599;
+            display: inline-block;
+        }
+
+        /* Pagination */
+        .pagination-container {
+            padding: 24px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .pagination-info {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        .pagination {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .page-btn {
+            padding: 10px 16px;
+            background: rgba(0, 229, 153, 0.1);
+            border: 1px solid rgba(0, 229, 153, 0.2);
+            border-radius: 8px;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 14px;
+            font-weight: 500;
+            min-width: 44px;
+            text-align: center;
+        }
+
+        .page-btn:hover:not(:disabled) {
+            background: rgba(0, 229, 153, 0.2);
+            border-color: #00e599;
+            transform: translateY(-2px);
+        }
+
+        .page-btn.active {
+            background: #00e599;
+            color: #000000;
+            border-color: #00e599;
+            font-weight: 700;
+        }
+
+        .page-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .page-ellipsis {
+            color: rgba(255, 255, 255, 0.4);
+            padding: 0 8px;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .spinner {
+            border: 3px solid rgba(0, 229, 153, 0.1);
+            border-top: 3px solid #00e599;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .empty-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            opacity: 0.3;
+        }
+
+        .empty-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 8px;
+        }
+
+        .empty-text {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+
+        /* Error State */
+        .error-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #ff6b6b;
+        }
+
+        .error-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            .company-name {
+                font-size: 20px;
+            }
+
+            .search-section {
+                padding: 20px;
+            }
+
+            th, td {
+                padding: 12px 16px;
+                font-size: 13px;
+            }
+
+            .user-avatar {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+
+            .pagination-container {
+                padding: 20px;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .pagination {
+                justify-content: center;
+            }
+
+            .stat-card {
+                min-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-btn {
+                padding: 8px 12px;
+                min-width: 36px;
+                font-size: 13px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-section">
+                <div class="">
+                    <img src="https://res.cloudinary.com/dzkdemrec/image/upload/v1760702745/Untitled_design_3_cf7cgd.png" alt="" class="company-logo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-wrapper">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="searchInput"
+                    placeholder="Search by name, email, phone, or user token..."
+                >
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-label">Total Users</div>
+                <div class="stat-value" id="totalUsers">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Current Page</div>
+                <div class="stat-value" id="currentPageStat">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Total Pages</div>
+                <div class="stat-value" id="totalPagesStat">-</div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <div class="table-wrapper">
+                <table id="usersTable">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Email</th>
+                            <th>User Token</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="3">
+                                <div class="loading">
+                                    <div class="spinner"></div>
+                                    <div>Loading users...</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-container">
+                <div class="pagination-info" id="paginationInfo">
+                    Showing 0 of 0 users
+                </div>
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'https://winmacmini.satisfyhost.com/api/v1/admin';
+        let currentPage = 1;
+        let currentSearch = '';
+        let totalPages = 1;
+        let totalUsers = 0;
+        const limit = 10;
+        let searchTimeout;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchUsers();
+            setupSearch();
+        });
+
+        // Setup search with debounce
+        function setupSearch() {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', (e) => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    currentSearch = e.target.value.trim();
+                    currentPage = 1;
+                    fetchUsers();
+                }, 500);
+            });
+        }
+
+        // Fetch users from API
+        async function fetchUsers() {
+            try {
+                showLoading();
+                
+                const params = new URLSearchParams({
+                    page: currentPage,
+                    limit: limit,
+                    search: currentSearch
+                });
+
+                const response = await fetch(`${API_BASE_URL}/users?${params}`);
+                
+                if (!response.ok) {
+                    throw new Error('Failed to fetch users');
+                }
+
+                const data = await response.json();
+                
+                if (data.success && data.data) {
+                    displayUsers(data.data.users);
+                    updatePagination(data.data);
+                    updateStats(data.data);
+                } else {
+                    showError('Invalid response format');
+                }
+            } catch (error) {
+                console.error('Error fetching users:', error);
+                showError(error.message);
+            }
+        }
+
+        // Display users in table
+        function displayUsers(users) {
+            const tbody = document.getElementById('tableBody');
+            
+            if (!users || users.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="3">
+                            <div class="empty-state">
+                                <div class="empty-icon">🔍</div>
+                                <div class="empty-title">No users found</div>
+                                <div class="empty-text">Try adjusting your search criteria</div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = users.map(user => {
+                const initial = user.name ? user.name.charAt(0).toUpperCase() : '?';
+                return `
+                    <tr>
+                        <td>
+                            <div class="user-name">
+                                <div class="user-avatar">${initial}</div>
+                                <span>${user.name || 'N/A'}</span>
+                            </div>
+                        </td>
+                        <td>${user.email || 'N/A'}</td>
+                        <td><span class="user-token">${user.userToken || 'N/A'}</span></td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Update pagination
+        function updatePagination(data) {
+            totalPages = data.totalPages || 1;
+            currentPage = data.currentPage || 1;
+            totalUsers = data.totalUsers || 0;
+
+            const paginationContainer = document.getElementById('pagination');
+            const paginationInfo = document.getElementById('paginationInfo');
+
+            const start = totalUsers === 0 ? 0 : ((currentPage - 1) * limit) + 1;
+            const end = Math.min(currentPage * limit, totalUsers);
+            
+            paginationInfo.textContent = `Showing ${start}-${end} of ${totalUsers} users`;
+
+            let paginationHTML = '';
+
+            // Previous button
+            paginationHTML += `
+                <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">
+                    ← Prev
+                </button>
+            `;
+
+            // Page numbers
+            const pages = generatePageNumbers(currentPage, totalPages);
+            pages.forEach(page => {
+                if (page === '...') {
+                    paginationHTML += `<span class="page-ellipsis">...</span>`;
+                } else {
+                    paginationHTML += `
+                        <button class="page-btn ${page === currentPage ? 'active' : ''}" onclick="goToPage(${page})">
+                            ${page}
+                        </button>
+                    `;
+                }
+            });
+
+            // Next button
+            paginationHTML += `
+                <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">
+                    Next →
+                </button>
+            `;
+
+            paginationContainer.innerHTML = paginationHTML;
+        }
+
+        // Generate page numbers with ellipsis
+        function generatePageNumbers(current, total) {
+            const pages = [];
+            const delta = 2;
+
+            if (total <= 7) {
+                for (let i = 1; i <= total; i++) {
+                    pages.push(i);
+                }
+                return pages;
+            }
+
+            pages.push(1);
+
+            if (current - delta > 2) {
+                pages.push('...');
+            }
+
+            for (let i = Math.max(2, current - delta); i <= Math.min(total - 1, current + delta); i++) {
+                pages.push(i);
+            }
+
+            if (current + delta < total - 1) {
+                pages.push('...');
+            }
+
+            pages.push(total);
+
+            return pages;
+        }
+
+        // Update stats
+        function updateStats(data) {
+            document.getElementById('totalUsers').textContent = data.totalUsers || 0;
+            document.getElementById('currentPageStat').textContent = data.currentPage || 1;
+            document.getElementById('totalPagesStat').textContent = data.totalPages || 1;
+        }
+
+        // Go to specific page
+        function goToPage(page) {
+            if (page < 1 || page > totalPages) return;
+            currentPage = page;
+            fetchUsers();
+        }
+
+        // Show loading state
+        function showLoading() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = `
+                <tr>
+                    <td colspan="3">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <div>Loading users...</div>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        }
+
+        // Show error state
+        function showError(message) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = `
+                <tr>
+                    <td colspan="3">
+                        <div class="error-state">
+                            <div class="error-icon">⚠️</div>
+                            <div class="empty-title">Error Loading Users</div>
+                            <div class="empty-text">${message}</div>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        }
+    </script>
+</body>
+</html>

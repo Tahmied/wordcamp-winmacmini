@@ -20,17 +20,18 @@ export const registerUser = asyncHandler(async (req, res) => {
     const ipAddress = req.ip;
     const userToken = Math.floor(100000 + Math.random() * 900000).toString();
 
-    const user = await User.create({
-        name,
-        email,
-        phone,
-        profession,
-        company,
-        userToken,
-        ipAddress, hasPostedSocial: hasPostedSocial || true, 
-        socialPlatform: hasPostedSocial ? socialPlatform : null,
-        socialPostLink: hasPostedSocial ? socialPostLink : null,
-    });
+const user = await User.create({
+    name,
+    email,
+    phone,
+    profession,
+    company,
+    userToken,
+    ipAddress,
+    hasPostedSocial: true,
+    socialPlatform, 
+    socialPostLink, 
+});
 
     return res.status(201).json(
         new ApiResponse(

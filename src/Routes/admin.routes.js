@@ -15,7 +15,7 @@ router.get('/logout', findUser, logOut)
 
 // dashboard routes
 router.post('/setPrize', mediaUpload('prizes').single('image') , findUser, setPrize)
-router.get('/users', getUsers)
-router.patch('/:userId/status', changeUserStatus)
+router.get('/users', findUser, getUsers)
+router.patch('/:userId/status', findUser, changeUserStatus)
 
 export default router

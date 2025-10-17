@@ -932,21 +932,17 @@ select:focus {
             return true;
         }
 
-        function nextStep() {
-            if (currentStep === 2 && !validateStep2()) {
-                return;
-            }
 
-            if (currentStep === 3) {
-                submitForm();
-                return;
-            }
+function nextStep() {
+    if (currentStep === 2 && !validateStep2()) {
+        return;
+    }
 
-            if (currentStep < totalSteps) {
-                currentStep++;
-                updateProgress();
-            }
-        }
+    if (currentStep < totalSteps) {
+        currentStep++;
+        updateProgress();
+    }
+}
 
         function prevStep() {
             if (currentStep > 1) {
