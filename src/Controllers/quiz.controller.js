@@ -102,6 +102,7 @@ export const submitAnswers = asyncHandler(async (req, res) => {
     if (user.quizState.retaking) {
         user.quizState.retakeUsed = true;
         user.quizState.retaking = false;
+        user.assignedPrize = null;
     }
 
     await user.save({ validateBeforeSave: false });

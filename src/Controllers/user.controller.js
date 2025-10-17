@@ -27,7 +27,7 @@ export const registerUser = asyncHandler(async (req, res) => {
         profession,
         company,
         userToken,
-        ipAddress, hasPostedSocial: hasPostedSocial || false, 
+        ipAddress, hasPostedSocial: hasPostedSocial || true, 
         socialPlatform: hasPostedSocial ? socialPlatform : null,
         socialPostLink: hasPostedSocial ? socialPostLink : null,
     });
