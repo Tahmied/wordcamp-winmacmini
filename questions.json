@@ -1,0 +1,878 @@
+[
+  {
+    "text": "What is the capital of France?",
+    "options": ["London", "Berlin", "Paris", "Madrid"],
+    "correctAnswer": "Paris",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": "Mars",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest ocean on Earth?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "correctAnswer": "Pacific Ocean",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Who painted the Mona Lisa?",
+    "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
+    "correctAnswer": "Leonardo da Vinci",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the chemical symbol for gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "correctAnswer": "Au",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which country is home to the kangaroo?",
+    "options": ["New Zealand", "Australia", "South Africa", "Brazil"],
+    "correctAnswer": "Australia",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the tallest mountain in the world?",
+    "options": ["K2", "Mount Kilimanjaro", "Mount Everest", "Denali"],
+    "correctAnswer": "Mount Everest",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many continents are there?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "7",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Japan?",
+    "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+    "correctAnswer": "Tokyo",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "correctAnswer": "Carbon Dioxide",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest mammal in the world?",
+    "options": ["African Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
+    "correctAnswer": "Blue Whale",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many sides does a hexagon have?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "6",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the currency of the United Kingdom?",
+    "options": ["Euro", "Dollar", "Pound Sterling", "Franc"],
+    "correctAnswer": "Pound Sterling",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which vitamin is produced when the skin is exposed to sunlight?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "correctAnswer": "Vitamin D",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "correctAnswer": "2",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which company created the iPhone?",
+    "options": ["Samsung", "Apple", "Microsoft", "Google"],
+    "correctAnswer": "Apple",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Italy?",
+    "options": ["Venice", "Milan", "Rome", "Florence"],
+    "correctAnswer": "Rome",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many days are in a leap year?",
+    "options": ["364", "365", "366", "367"],
+    "correctAnswer": "366",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the main ingredient in guacamole?",
+    "options": ["Tomato", "Avocado", "Pepper", "Onion"],
+    "correctAnswer": "Avocado",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which ocean is the Bermuda Triangle located in?",
+    "options": ["Pacific Ocean", "Indian Ocean", "Atlantic Ocean", "Arctic Ocean"],
+    "correctAnswer": "Atlantic Ocean",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the freezing point of water in Celsius?",
+    "options": ["-10°C", "0°C", "10°C", "32°C"],
+    "correctAnswer": "0°C",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which animal is known as the King of the Jungle?",
+    "options": ["Tiger", "Elephant", "Lion", "Leopard"],
+    "correctAnswer": "Lion",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What does HTML stand for?",
+    "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language"],
+    "correctAnswer": "Hyper Text Markup Language",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many colors are in a rainbow?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "7",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Spain?",
+    "options": ["Barcelona", "Madrid", "Seville", "Valencia"],
+    "correctAnswer": "Madrid",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Earth", "Mercury", "Mars"],
+    "correctAnswer": "Mercury",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest organ in the human body?",
+    "options": ["Heart", "Brain", "Liver", "Skin"],
+    "correctAnswer": "Skin",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many legs does a spider have?",
+    "options": ["6", "8", "10", "12"],
+    "correctAnswer": "8",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the chemical symbol for water?",
+    "options": ["O2", "H2O", "CO2", "H2O2"],
+    "correctAnswer": "H2O",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which country is famous for the Great Wall?",
+    "options": ["Japan", "China", "India", "Mongolia"],
+    "correctAnswer": "China",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Canada?",
+    "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "correctAnswer": "Ottawa",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many hours are in a day?",
+    "options": ["12", "24", "36", "48"],
+    "correctAnswer": "24",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the boiling point of water in Celsius?",
+    "options": ["50°C", "75°C", "100°C", "125°C"],
+    "correctAnswer": "100°C",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which fruit is known for having seeds on the outside?",
+    "options": ["Apple", "Strawberry", "Banana", "Orange"],
+    "correctAnswer": "Strawberry",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Germany?",
+    "options": ["Munich", "Berlin", "Hamburg", "Frankfurt"],
+    "correctAnswer": "Berlin",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many strings does a standard guitar have?",
+    "options": ["4", "5", "6", "7"],
+    "correctAnswer": "6",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest desert in the world?",
+    "options": ["Gobi Desert", "Sahara Desert", "Arabian Desert", "Antarctic Desert"],
+    "correctAnswer": "Antarctic Desert",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which social media platform uses a bird as its logo?",
+    "options": ["Facebook", "Instagram", "Twitter", "LinkedIn"],
+    "correctAnswer": "Twitter",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Egypt?",
+    "options": ["Alexandria", "Cairo", "Giza", "Luxor"],
+    "correctAnswer": "Cairo",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many keys are on a standard piano?",
+    "options": ["76", "88", "96", "100"],
+    "correctAnswer": "88",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the primary language spoken in Brazil?",
+    "options": ["Spanish", "Portuguese", "English", "French"],
+    "correctAnswer": "Portuguese",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which planet is known for its rings?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "correctAnswer": "Saturn",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "correctAnswer": "Canberra",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many minutes are in an hour?",
+    "options": ["30", "45", "60", "90"],
+    "correctAnswer": "60",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the chemical symbol for oxygen?",
+    "options": ["O", "Ox", "O2", "Og"],
+    "correctAnswer": "O",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which country is home to the Eiffel Tower?",
+    "options": ["Italy", "Spain", "France", "Germany"],
+    "correctAnswer": "France",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the smallest country in the world?",
+    "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+    "correctAnswer": "Vatican City",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many wheels does a bicycle have?",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": "2",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Russia?",
+    "options": ["St. Petersburg", "Moscow", "Kiev", "Minsk"],
+    "correctAnswer": "Moscow",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which search engine is most widely used?",
+    "options": ["Bing", "Yahoo", "Google", "DuckDuckGo"],
+    "correctAnswer": "Google",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest country by land area?",
+    "options": ["Canada", "China", "United States", "Russia"],
+    "correctAnswer": "Russia",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many players are on a soccer team?",
+    "options": ["9", "10", "11", "12"],
+    "correctAnswer": "11",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of the United States?",
+    "options": ["New York", "Los Angeles", "Washington D.C.", "Chicago"],
+    "correctAnswer": "Washington D.C.",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which metal is liquid at room temperature?",
+    "options": ["Iron", "Gold", "Mercury", "Silver"],
+    "correctAnswer": "Mercury",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest continent?",
+    "options": ["Africa", "Asia", "North America", "Europe"],
+    "correctAnswer": "Asia",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many months have 31 days?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "7",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Greece?",
+    "options": ["Sparta", "Athens", "Thessaloniki", "Crete"],
+    "correctAnswer": "Athens",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which streaming service is known for its original series like Stranger Things?",
+    "options": ["Hulu", "Amazon Prime", "Netflix", "Disney+"],
+    "correctAnswer": "Netflix",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the hardest natural substance on Earth?",
+    "options": ["Gold", "Iron", "Diamond", "Platinum"],
+    "correctAnswer": "Diamond",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many seconds are in a minute?",
+    "options": ["30", "45", "60", "90"],
+    "correctAnswer": "60",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of India?",
+    "options": ["Mumbai", "New Delhi", "Bangalore", "Kolkata"],
+    "correctAnswer": "New Delhi",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which planet is known as the Blue Planet?",
+    "options": ["Neptune", "Uranus", "Earth", "Mars"],
+    "correctAnswer": "Earth",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest bird in the world?",
+    "options": ["Eagle", "Ostrich", "Penguin", "Albatross"],
+    "correctAnswer": "Ostrich",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many degrees are in a circle?",
+    "options": ["180", "270", "360", "450"],
+    "correctAnswer": "360",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Mexico?",
+    "options": ["Guadalajara", "Cancun", "Mexico City", "Monterrey"],
+    "correctAnswer": "Mexico City",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which company makes the Windows operating system?",
+    "options": ["Apple", "Google", "Microsoft", "IBM"],
+    "correctAnswer": "Microsoft",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the fastest land animal?",
+    "options": ["Lion", "Cheetah", "Leopard", "Horse"],
+    "correctAnswer": "Cheetah",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many sides does a triangle have?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": "3",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Brazil?",
+    "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+    "correctAnswer": "Brasília",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which organ pumps blood through the human body?",
+    "options": ["Liver", "Kidney", "Heart", "Lungs"],
+    "correctAnswer": "Heart",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the smallest planet in our solar system?",
+    "options": ["Mars", "Venus", "Mercury", "Pluto"],
+    "correctAnswer": "Mercury",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many cents are in a dollar?",
+    "options": ["50", "75", "100", "125"],
+    "correctAnswer": "100",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Argentina?",
+    "options": ["Córdoba", "Buenos Aires", "Mendoza", "Rosario"],
+    "correctAnswer": "Buenos Aires",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which technology company is known for its electric cars?",
+    "options": ["Ford", "Toyota", "Tesla", "Honda"],
+    "correctAnswer": "Tesla",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the main gas in Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswer": "Nitrogen",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many zeros are in one thousand?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": "3",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of South Africa?",
+    "options": ["Johannesburg", "Cape Town", "Pretoria", "Durban"],
+    "correctAnswer": "Pretoria",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which fruit is traditionally used to make wine?",
+    "options": ["Apple", "Grape", "Orange", "Peach"],
+    "correctAnswer": "Grape",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest island in the world?",
+    "options": ["Madagascar", "Greenland", "Borneo", "Iceland"],
+    "correctAnswer": "Greenland",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many letters are in the English alphabet?",
+    "options": ["24", "25", "26", "27"],
+    "correctAnswer": "26",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Turkey?",
+    "options": ["Istanbul", "Ankara", "Izmir", "Antalya"],
+    "correctAnswer": "Ankara",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which planet is the hottest in our solar system?",
+    "options": ["Mercury", "Venus", "Mars", "Jupiter"],
+    "correctAnswer": "Venus",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the primary color of emeralds?",
+    "options": ["Blue", "Red", "Green", "Yellow"],
+    "correctAnswer": "Green",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many weeks are in a year?",
+    "options": ["50", "51", "52", "53"],
+    "correctAnswer": "52",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Sweden?",
+    "options": ["Oslo", "Stockholm", "Copenhagen", "Helsinki"],
+    "correctAnswer": "Stockholm",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which company created Android?",
+    "options": ["Apple", "Microsoft", "Google", "Samsung"],
+    "correctAnswer": "Google",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the currency of Japan?",
+    "options": ["Yuan", "Won", "Yen", "Ringgit"],
+    "correctAnswer": "Yen",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many sides does a pentagon have?",
+    "options": ["4", "5", "6", "7"],
+    "correctAnswer": "5",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Norway?",
+    "options": ["Bergen", "Oslo", "Stavanger", "Trondheim"],
+    "correctAnswer": "Oslo",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which animal is known for its black and white stripes?",
+    "options": ["Tiger", "Zebra", "Panda", "Skunk"],
+    "correctAnswer": "Zebra",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the largest lake in the world?",
+    "options": ["Lake Superior", "Caspian Sea", "Lake Victoria", "Lake Baikal"],
+    "correctAnswer": "Caspian Sea",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many players are on a basketball team on the court?",
+    "options": ["4", "5", "6", "7"],
+    "correctAnswer": "5",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Thailand?",
+    "options": ["Phuket", "Chiang Mai", "Bangkok", "Pattaya"],
+    "correctAnswer": "Bangkok",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which element has the chemical symbol Fe?",
+    "options": ["Gold", "Iron", "Silver", "Copper"],
+    "correctAnswer": "Iron",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the tallest building in the world as of 2024?",
+    "options": ["Empire State Building", "Shanghai Tower", "Burj Khalifa", "One World Trade Center"],
+    "correctAnswer": "Burj Khalifa",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many teeth does an adult human typically have?",
+    "options": ["28", "30", "32", "34"],
+    "correctAnswer": "32",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of Portugal?",
+    "options": ["Porto", "Lisbon", "Faro", "Braga"],
+    "correctAnswer": "Lisbon",
+    "difficulty": "easy"
+  },
+  {
+    "text": "In what year did the Titanic sink?",
+    "options": ["1905", "1912", "1920", "1935"],
+    "correctAnswer": "1912",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the atomic number of carbon?",
+    "options": ["4", "6", "8", "12"],
+    "correctAnswer": "6",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who wrote the novel '1984'?",
+    "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Arthur C. Clarke"],
+    "correctAnswer": "George Orwell",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the speed of light in a vacuum?",
+    "options": ["299,792 km/s", "300,000 km/s", "250,000 km/s", "350,000 km/s"],
+    "correctAnswer": "299,792 km/s",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which programming language was created by Guido van Rossum?",
+    "options": ["Java", "C++", "Python", "Ruby"],
+    "correctAnswer": "Python",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the capital of Kazakhstan?",
+    "options": ["Almaty", "Astana", "Shymkent", "Aktobe"],
+    "correctAnswer": "Astana",
+    "difficulty": "hard"
+  },
+  {
+    "text": "In which year was the World Wide Web invented?",
+    "options": ["1985", "1989", "1991", "1995"],
+    "correctAnswer": "1989",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the smallest bone in the human body?",
+    "options": ["Stapes", "Malleus", "Incus", "Femur"],
+    "correctAnswer": "Stapes",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who developed the theory of general relativity?",
+    "options": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Niels Bohr"],
+    "correctAnswer": "Albert Einstein",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the rarest blood type?",
+    "options": ["O negative", "AB negative", "B negative", "A negative"],
+    "correctAnswer": "AB negative",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which country has the most UNESCO World Heritage Sites?",
+    "options": ["France", "China", "Italy", "Spain"],
+    "correctAnswer": "Italy",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the longest river in South America?",
+    "options": ["Paraná River", "Amazon River", "Orinoco River", "São Francisco River"],
+    "correctAnswer": "Amazon River",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who painted 'The Starry Night'?",
+    "options": ["Claude Monet", "Vincent van Gogh", "Paul Cézanne", "Pablo Picasso"],
+    "correctAnswer": "Vincent van Gogh",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the chemical formula for sulfuric acid?",
+    "options": ["H2SO3", "H2SO4", "HSO4", "H3SO4"],
+    "correctAnswer": "H2SO4",
+    "difficulty": "hard"
+  },
+  {
+    "text": "In which year did India gain independence?",
+    "options": ["1945", "1946", "1947", "1948"],
+    "correctAnswer": "1947",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the most abundant element in the universe?",
+    "options": ["Helium", "Oxygen", "Hydrogen", "Carbon"],
+    "correctAnswer": "Hydrogen",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who composed 'The Four Seasons'?",
+    "options": ["Johann Sebastian Bach", "Wolfgang Amadeus Mozart", "Antonio Vivaldi", "Ludwig van Beethoven"],
+    "correctAnswer": "Antonio Vivaldi",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the capital of Mongolia?",
+    "options": ["Erdenet", "Darkhan", "Ulaanbaatar", "Choibalsan"],
+    "correctAnswer": "Ulaanbaatar",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which element has the highest melting point?",
+    "options": ["Tungsten", "Carbon", "Osmium", "Titanium"],
+    "correctAnswer": "Tungsten",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the largest moon of Saturn?",
+    "options": ["Europa", "Ganymede", "Titan", "Callisto"],
+    "correctAnswer": "Titan",
+    "difficulty": "hard"
+  },
+  {
+    "text": "In which year was the first iPhone released?",
+    "options": ["2005", "2006", "2007", "2008"],
+    "correctAnswer": "2007",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who wrote 'The Divine Comedy'?",
+    "options": ["Geoffrey Chaucer", "Dante Alighieri", "John Milton", "Virgil"],
+    "correctAnswer": "Dante Alighieri",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the SI unit of electric current?",
+    "options": ["Volt", "Ohm", "Ampere", "Watt"],
+    "correctAnswer": "Ampere",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which ocean is the deepest?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "correctAnswer": "Pacific Ocean",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the second most spoken language in the world by native speakers?",
+    "options": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
+    "correctAnswer": "Spanish",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who discovered penicillin?",
+    "options": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Edward Jenner"],
+    "correctAnswer": "Alexander Fleming",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the capital of Azerbaijan?",
+    "options": ["Ganja", "Baku", "Sumqayit", "Lankaran"],
+    "correctAnswer": "Baku",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which planet has the most moons?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "correctAnswer": "Saturn",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the Mohs hardness of diamond?",
+    "options": ["8", "9", "10", "11"],
+    "correctAnswer": "10",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who invented the telephone?",
+    "options": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Guglielmo Marconi"],
+    "correctAnswer": "Alexander Graham Bell",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the largest volcano in the solar system?",
+    "options": ["Mount Vesuvius", "Olympus Mons", "Mauna Loa", "Mount Etna"],
+    "correctAnswer": "Olympus Mons",
+    "difficulty": "hard"
+  },
+  {
+    "text": "In which year did the Berlin Wall fall?",
+    "options": ["1987", "1988", "1989", "1990"],
+    "correctAnswer": "1989",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the chemical symbol for tungsten?",
+    "options": ["Tu", "Tn", "W", "Tg"],
+    "correctAnswer": "W",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who wrote 'Pride and Prejudice'?",
+    "options": ["Charlotte Brontë", "Jane Austen", "Emily Brontë", "Mary Shelley"],
+    "correctAnswer": "Jane Austen",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the longest bone in the human body?",
+    "options": ["Tibia", "Humerus", "Femur", "Fibula"],
+    "correctAnswer": "Femur",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which country has the most time zones?",
+    "options": ["Russia", "United States", "China", "France"],
+    "correctAnswer": "France",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the capital of Uzbekistan?",
+    "options": ["Samarkand", "Bukhara", "Tashkent", "Khiva"],
+    "correctAnswer": "Tashkent", 
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who painted 'The Persistence of Memory'?",
+    "options": ["Pablo Picasso", "Salvador Dalí", "René Magritte", "Joan Miró"],
+    "correctAnswer": "Salvador Dalí",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the freezing point of water in Fahrenheit?",
+    "options": ["0°F", "32°F", "64°F", "100°F"],
+    "correctAnswer": "32°F",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which programming language is known as the language of the web?",
+    "options": ["Python", "Java", "JavaScript", "C++"],
+    "correctAnswer": "JavaScript",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the largest artery in the human body?",
+    "options": ["Pulmonary artery", "Carotid artery", "Aorta", "Femoral artery"],
+    "correctAnswer": "Aorta",
+    "difficulty": "hard"
+  },
+  {
+    "text": "In which year was the European Union founded?",
+    "options": ["1990", "1991", "1992", "1993"],
+    "correctAnswer": "1993",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the capital of Kyrgyzstan?",
+    "options": ["Osh", "Bishkek", "Jalal-Abad", "Karakol"],
+    "correctAnswer": "Bishkek",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who developed the first successful vaccine for polio?",
+    "options": ["Jonas Salk", "Albert Sabin", "Louis Pasteur", "Edward Jenner"],
+    "correctAnswer": "Jonas Salk",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the square root of 256?",
+    "options": ["14", "15", "16", "17"],
+    "correctAnswer": "16",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which element has the atomic number 79?",
+    "options": ["Silver", "Platinum", "Gold", "Mercury"],
+    "correctAnswer": "Gold",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the capital of Bangladesh?",
+    "options": ["Chittagong", "Dhaka", "Khulna", "Sylhet"],
+    "correctAnswer": "Dhaka",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Who wrote 'The Odyssey'?",
+    "options": ["Virgil", "Homer", "Sophocles", "Euripides"],
+    "correctAnswer": "Homer",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the term for a word that is spelled the same forwards and backwards?",
+    "options": ["Anagram", "Homophone", "Palindrome", "Synonym"],
+    "correctAnswer": "Palindrome",
+    "difficulty": "hard"
+  }
+]
